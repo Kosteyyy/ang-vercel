@@ -9,6 +9,6 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title = 'angular14-test-setup';
   constructor() {
-    console.log('API_KEY: ', process.env['API_KEY']);
+    console.log('API_KEY: ', process.env['NG_APP_API_KEY']);
   }
 }

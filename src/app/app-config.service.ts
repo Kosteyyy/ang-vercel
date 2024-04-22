@@ -11,7 +11,8 @@ export class AppConfigService {
   constructor(@Inject(APP_CONFIG) private config: any) {}
 
   load() {
-    this.config.apiUrl = (window as any)['API_URL'] || this.config.apiUrl;
+    this.config.apiUrl =
+      (window as any)['NG_APP_API_KEY'] || this.config.apiUrl;
     // Load other environment variables in a similar way
   }
 }
